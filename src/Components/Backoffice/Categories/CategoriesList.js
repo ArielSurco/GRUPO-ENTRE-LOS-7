@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import TableEditable from '../../common/EditableTable'
-import { NewsTableRows } from '../../News/NewsTableRows'
+import { NewsTableRows } from '../../Backoffice/News/NewsTableRows'
 import {Table,TableBody,TableCell,TableContainer,TableHead,Button,TableRow} from "@mui/material";
 import '../../../Styles/TableStyle.css'
 import '../../../Styles/Table.css'

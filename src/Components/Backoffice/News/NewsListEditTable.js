@@ -1,7 +1,7 @@
 import {TableContainer, Table, TableHead, TableBody, TableRow, TableCell, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { NewsTableRows } from "./NewsTableRows";
-import { createNewsObject } from "../../Services/newsServices";
+import { createNewsObject } from "../../../Services/newsServices";
 import GlobalStyles from '@mui/material/GlobalStyles';
 import { Reveal, Fade } from "react-awesome-reveal";
 

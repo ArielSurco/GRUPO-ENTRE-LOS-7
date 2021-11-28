@@ -5,7 +5,7 @@ import "../../../Styles/TableStyle.css";
 import { getAll, deleteById } from '../../../app/activitiesReducer/activitiesReducer';
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import {NewsTableRows} from '../../News/NewsTableRows';
+import {NewsTableRows} from '../../Backoffice/News/NewsTableRows';
 import {Table,TableBody,TableCell,TableContainer,TableHead,Button,TableRow} from "@mui/material";
 
 const ActivitiesTable = () => {

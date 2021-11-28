@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { TableRow, TableCell, IconButton } from "@mui/material";
 import { Edit, Delete } from "@mui/icons-material";
-import { formatDate } from "../../Utils/formatters";
-import "../../Styles/Table.css";
-import * as newsActions from "../../app/NewsReducer/newsReducer";
+import { formatDate } from "../../../Utils/formatters";
+import "../../../Styles/Table.css";
+import * as newsActions from "../../../app/NewsReducer/newsReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { getById } from "../../Services/newsServices";
+import { getById } from "../../../Services/newsServices";
 
 const NewsTableRows = () => {
   const dispatch = useDispatch();
