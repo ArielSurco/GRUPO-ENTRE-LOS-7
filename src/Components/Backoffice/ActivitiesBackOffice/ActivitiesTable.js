@@ -26,14 +26,6 @@ const ActivitiesTable = () => {
   return (
     <>
      <TitleBackoffice title={"Edición de Actividades"} />
-    <Link
-        to="/backoffice/activities/create"
-        style={{ textDecoration: "none" }}
-      >
-        <span className="linkActivity">
-          <h1>Create activities</h1>
-        </span>
-      </Link>
       <TableContainer className="TableContainer">
       <Table className="TableFinal">
         <TableHead className="TableRowModify">
@@ -41,7 +33,17 @@ const ActivitiesTable = () => {
             <TableCell className="TableCell"align="center">Name</TableCell>
             <TableCell className="TableCell"align="center">Image</TableCell>
             <TableCell className="TableCell"align="center">CreatedAt</TableCell>
-            <TableCell className="TableCell"align="center">updated</TableCell>
+            <TableCell align="center" className="TableCell">
+                  <Button
+                    color="buttoncreatenews"
+                    variant="contained"
+                    size="small"
+                    component={Link}
+                    to="/backoffice/activities/create"
+                  >
+                    Create Activity
+                  </Button>
+                </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

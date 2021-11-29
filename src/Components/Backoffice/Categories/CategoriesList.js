@@ -12,13 +12,13 @@ import {
 } from "@mui/material";
 import "../../../Styles/TableStyle.css";
 import "../../../Styles/Table.css";
-
+import TitleBackoffice from "../TitleBackoffice";
 const CategoriesList = () => {
   const linkStyle = { textDecoration: "none" };
   const mockCategories = [
-    { id: 1, name: "Name Category 1", createdAt: "2021-11-04T14:41:13.948Z" },
-    { id: 2, name: "Name Category 2", createdAt: "2021-11-04T14:42:11.957Z" },
-    { id: 3, name: "Name Category 3", createdAt: "2021-11-04T14:42:30.863Z" },
+    { id: 1, name: "Name Category 1", createdAt: "29/11/2021" },
+    { id: 2, name: "Name Category 2", createdAt: "29/11/2021" },
+    { id: 3, name: "Name Category 3", createdAt: "29/11/2021" },
   ];
   const handleEditClick = () => {};
   const handleDeleteClick = () => {};
@@ -26,9 +26,6 @@ const CategoriesList = () => {
   return (
     <>
      <TitleBackoffice title={"Edición de Categorías"} />
-      <Link to="/backoffice/categorías/create" style={linkStyle}>
-        Create a New Category
-      </Link>
       <TableContainer className="TableContainer">
         <Table className="TableFinal">
           <TableHead className="TableRowModify">
@@ -40,8 +37,16 @@ const CategoriesList = () => {
                 Created At
               </TableCell>
               <TableCell align="center" className="TableCell">
-                Actions
-              </TableCell>
+                  <Button
+                    color="buttoncreatenews"
+                    variant="contained"
+                    size="small"
+                    component={Link}
+                    to="/backoffice/categorías/create"
+                  >
+                    Create Category
+                  </Button>
+                </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
