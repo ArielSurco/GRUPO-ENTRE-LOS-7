@@ -34,12 +34,9 @@ const LoginForm = () => {
       setInitialValues({ ...initialValues, password: e.target.value });
       setHasErrors(false);
     }
-  };
   const loginRequest = async () => {
     try {
-      const {
-        data: { data },
-      } = await loginUser(initialValues);
+      const {data:{ data }} = await loginUser(initialValues);
       setUserName(data.user.name);
       return data;
     } catch (error) {
@@ -50,6 +47,7 @@ const LoginForm = () => {
     e.preventDefault();
     const { token } = await loginRequest();
     localStorage.setItem("token", token);
+    localStorage.setItem('userName',userName)
     setLoading(true);
     setTimeout(() => {
       push("/");
