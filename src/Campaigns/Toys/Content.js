@@ -39,7 +39,7 @@ const Content = () => {
         alignItems: "center",
         flexDirection: "column",
         position: "relative",
-        marginTop: "100px",
+        marginTop: "50px",
       }}
     >
       <Box
