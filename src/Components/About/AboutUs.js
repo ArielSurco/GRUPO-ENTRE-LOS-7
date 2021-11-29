@@ -62,19 +62,6 @@ const AboutUs = () => {
       </div>
       <Grid className="ContenedorTitulo">
         {/* <img src={logo} alt="Logo"  className="MiembrosLogo"/> */}
-        <Typography
-          variant="h3"
-          sx={{
-            fontSize: { lg: "45px", xs: "35px" },
-
-            bottom: "40px",
-            textTransform: "uppercase",
-            fontWeight: "600",
-            letterSpacing: "0.5rem",
-          }}
-        >
-          MIEMBROS{" "}
-        </Typography>
       </Grid>
       <div className="ContenedorCards">
         <AboutUsMembers />
