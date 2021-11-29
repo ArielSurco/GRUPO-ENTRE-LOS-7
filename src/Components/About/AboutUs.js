@@ -65,7 +65,7 @@ const AboutUs = () => {
         <Typography
           variant="h3"
           sx={{
-            fontSize: { lg: "50px", md: "40px", xs: "35px" },
+            fontSize: { lg: "45px", xs: "35px" },
 
             bottom: "40px",
             textTransform: "uppercase",
