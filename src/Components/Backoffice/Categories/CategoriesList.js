@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import TableEditable from "../../common/EditableTable";
 import { NewsTableRows } from "../../News/NewsTableRows";
 import {
@@ -20,7 +20,8 @@ const CategoriesList = () => {
     { id: 2, name: "Name Category 2", createdAt: "29/11/2021" },
     { id: 3, name: "Name Category 3", createdAt: "29/11/2021" },
   ];
-  const handleEditClick = () => {};
+  const history = useHistory();
+  const handleEditClick = (id) => history.push(`/backoffice/categories/edit/${id}`);
   const handleDeleteClick = () => {};
 
   return (
@@ -42,7 +43,7 @@ const CategoriesList = () => {
                     variant="contained"
                     size="small"
                     component={Link}
-                    to="/backoffice/categorías/create"
+                    to="/backoffice/categories/create"
                   >
                     Create Category
                   </Button>

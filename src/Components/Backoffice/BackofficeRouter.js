@@ -38,6 +38,7 @@ const BackOfficeRouter = () => {
           <PrivateRoute path={`${path}/projects/edit/:projectId`} component={ProjectsForm} />
           <PrivateRoute path={`${path}/news/edit/:newsid`} component={NewsForm} />
           <PrivateRoute path={`${path}/members/edit/:memberId`} component={MemberEditCreate} />
+          <PrivateRoute path={`${path}/categories/edit/:categoryId`} component={CategoriesForm} />
           <PrivateRoute path={`${path}/organization/edit`} component={OrganizationEditionForm} />
           <PrivateRoute path={`${path}/activities/create`} component={ActivitiesForm} />
           <PrivateRoute path={`${path}/categories/create`} component={CategoriesForm} />
