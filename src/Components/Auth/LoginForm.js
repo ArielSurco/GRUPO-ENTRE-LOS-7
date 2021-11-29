@@ -33,7 +33,7 @@ const LoginForm = () => {
     if (e.target.name === "password") {
       setInitialValues({ ...initialValues, password: e.target.value });
       setHasErrors(false);
-    }
+    }}
   const loginRequest = async () => {
     try {
       const {data:{ data }} = await loginUser(initialValues);
