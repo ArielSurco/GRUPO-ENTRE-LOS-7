@@ -20,7 +20,7 @@ const AboutUsMembers = () => {
   }, []);
 
   return (
-    <Container sx={{display:'flex', flexDirection:'column', alignItems:'center', my:1,mb:7,mt:9}}>
+    <Container data-aos="fade-up" data-aos-duration="3000"sx={{display:'flex', flexDirection:'column', alignItems:'center', my:1,mb:7,mt:9}}>
     <Grid container sx={{m:3}}>
         {showAboutUsMembers()}
       </Grid>

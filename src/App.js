@@ -19,7 +19,7 @@ function App() {
           <BrowserRouter>
             <AnimatedSwitch
               atEnter={{opacity:0}}
-              atLeave={{opacity:0}}
+              atLeave={{opacity:1}}
               atActive={{opacity:1}}
             >
               <Route path="/login" component={LoginForm} />
