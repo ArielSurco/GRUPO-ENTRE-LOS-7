@@ -9,6 +9,7 @@ import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 import { Fade, Zoom } from "react-awesome-reveal";
 import TitleBackoffice from "../TitleBackoffice";
+import BackofficeHeader from '../BackofficeHeader';
 const BackofficeLayout = () => {
   const BackofficeCategories = [
     {
@@ -74,81 +75,84 @@ const BackofficeLayout = () => {
     },
   ];
   return (
-    <div>
-      <TitleBackoffice title={"Backoffice home"} />
-      <Zoom duration="500" cascade>
-        <Grid
-          sx={{
-            justifyContent: "center",
-            width: "100%",
-          }}
-          container
-          spacing={0}
-        >
-          {BackofficeCategories.map((categories) => (
-            <Card
-              className="CardTransition"
-              sx={{
-                maxWidth: 300,
-                margin: 2,
-                padding: 0,
-                boxShadow: 20,
-                borderRadius: 2,
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <CardMedia
-                component="img"
-                height="170"
-                image={categories.images}
-                alt="green iguana"
-                className="CardBackoffice"
-              />
-              <CardContent
+    <>
+      <BackofficeHeader></BackofficeHeader>
+      <div>
+        <TitleBackoffice title={"Backoffice home"} />
+        <Zoom duration="500" cascade>
+          <Grid
+            sx={{
+              justifyContent: "center",
+              width: "100%",
+            }}
+            container
+            spacing={0}
+          >
+            {BackofficeCategories.map((categories) => (
+              <Card
+                className="CardTransition"
                 sx={{
-                  padding: "10px 15px 20px",
+                  maxWidth: 300,
+                  margin: 2,
+                  padding: 0,
+                  boxShadow: 20,
+                  borderRadius: 2,
+                  display: "flex",
+                  flexDirection: "column",
                 }}
               >
-                <Typography gutterBottom variant="h5" component="div">
-                  {categories.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {categories.descripcion}
-                </Typography>
-              </CardContent>
-              <CardActions
-                sx={{
-                  padding: "0px 0px 0px",
-                }}
-              >
-                <Button
+                <CardMedia
+                  component="img"
+                  height="170"
+                  image={categories.images}
+                  alt="green iguana"
+                  className="CardBackoffice"
+                />
+                <CardContent
                   sx={{
-                    borderRadius: 0,
-                    m: "0 auto",
-                    backgroundColor: "#28527a",
-                    width: "-webkit-fill-available",
+                    padding: "10px 15px 20px",
                   }}
-                  size="large"
-                  variant="contained"
                 >
-                  <Link
-                    className="ButtonUnderline"
-                    color="white"
-                    underline="none"
-                    to={categories.href}
+                  <Typography gutterBottom variant="h5" component="div">
+                    {categories.name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {categories.descripcion}
+                  </Typography>
+                </CardContent>
+                <CardActions
+                  sx={{
+                    padding: "0px 0px 0px",
+                  }}
+                >
+                  <Button
+                    sx={{
+                      borderRadius: 0,
+                      m: "0 auto",
+                      backgroundColor: "#28527a",
+                      width: "-webkit-fill-available",
+                    }}
+                    size="large"
+                    variant="contained"
                   >
-                    <Typography align="center" variant="string" color="white">
-                      {categories.button}
-                    </Typography>
-                  </Link>
-                </Button>
-              </CardActions>
-            </Card>
-          ))}
-        </Grid>
-      </Zoom>
-    </div>
+                    <Link
+                      className="ButtonUnderline"
+                      color="white"
+                      underline="none"
+                      to={categories.href}
+                    >
+                      <Typography align="center" variant="string" color="white">
+                        {categories.button}
+                      </Typography>
+                    </Link>
+                  </Button>
+                </CardActions>
+              </Card>
+            ))}
+          </Grid>
+        </Zoom>
+      </div>
+    </>
   );
 };
 
