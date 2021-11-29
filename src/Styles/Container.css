@@ -2,10 +2,10 @@
   position: relative;
   width: 100%;
   margin-bottom: 100px;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
 }
-#root{
-  background-color:whitesmoke !important;
+#root {
+  background-color: whitesmoke !important;
 }
 .title-container-text {
   width: 100%;
@@ -36,68 +36,61 @@
   padding: 20px;
   background-color: #d4cac8;
 }
-.ContenedorTweets{
+.ContenedorTweets {
   background: url(../Assets/waves/wave.svg) no-repeat bottom center;
 }
-.ContenedorWaveFooter{
+.ContenedorWaveFooter {
   background: url(../Assets/waves/wave.svg) no-repeat bottom center;
   width: 100vw;
   height: 500px;
   margin-top: -300px;
 }
-.ContenedorNosotros{
+.ContenedorNosotros {
   width: 100vw;
-  height: 600px;
-  background: url(../Assets/waves/wave.svg) bottom /100%  no-repeat;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -100px;
+  margin-bottom: -200px;
 }
-.ContenedorNosotros img{
+.ContenedorNosotros img {
   margin-bottom: 300px;
 }
-.ContenedorNosotros h1{
-  color:rgb(8 8 8 / 75%) !important;
+.ContenedorNosotros h1 {
+  color: rgb(8 8 8 / 75%) !important;
   margin-bottom: 300px;
   font-weight: 400;
   letter-spacing: 1px;
 }
-.ContenedorNosotrosH1{
+.ContenedorNosotrosH1 {
   width: 600px;
 }
-.ContenedorTitulo{
-  background: url(../Assets/waves/wavemiembros4.svg) top /100% no-repeat;
+.ContenedorTitulo {
+  /* background: url(../Assets/waves/wavemiembros4.svg) top / 100% no-repeat; */
   width: 100vw;
-  height: 400px;
   display: flex;
+  height: 60px;
   align-items: center;
   justify-content: center;
-  color:white;
-  font-size:25px;
-  text-shadow: 2px 2px black;
+  color: #28527ad8;
+  margin-bottom: -50px;
+  /* text-shadow: 2px 2px 2px rgb(48, 48, 48); */
 }
-.ContenedorTitulo h1{
+.ContenedorTitulo h1 {
   margin-bottom: 70px;
 }
-@media (max-width: 1400px) {
-  .ContenedorTitulo{
-    height: 300px;
-    margin-top: 100px;
 
-  }
-  }
-.ContenedorTitulo img{
-  height:200px;
+.MiembrosLogo {
+  height: 200px;
   max-width: 200px;
-
+  display: block;
 }
-.css-1wmwz36-MuiContainer-root{
+.css-1wmwz36-MuiContainer-root {
   margin-bottom: 0 !important;
 }
-.css-129m33r-MuiPaper-root-MuiCard-root:hover{
-  background-color:lightgrey !important;
-  transition:1s;
+.css-129m33r-MuiPaper-root-MuiCard-root:hover {
+  background-color: lightgrey !important;
+  transition: 1s;
 }
 /* .ContenedorCards{
   background: url(../Assets/waves/wavenosotroscards.svg) no-repeat  center;
