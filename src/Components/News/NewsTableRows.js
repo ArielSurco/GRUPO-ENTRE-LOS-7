@@ -8,6 +8,7 @@ import { cleanCurrentState } from "../../app/NewsReducer/newsReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { getById } from "../../Services/newsServices";
+import Swal from "sweetalert2";
 
 const NewsTableRows = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,10 @@ const NewsTableRows = () => {
   const onDelete = (id) => dispatch(newsActions.deletebyId(id));
 
   const news = useSelector((state) => state.news.data);
+
+  const newsDeleted = () => {
+    Swal.fire("Noticia Eliminada");
+  };
 
   useEffect(() => {
     dispatch(newsActions.getAll());
@@ -46,7 +51,12 @@ const NewsTableRows = () => {
             <IconButton onClick={() => onEdit(element.id)}>
               <Edit />
             </IconButton>
-            <IconButton onClick={() => onDelete(element.id)}>
+            <IconButton
+              onClick={() => {
+                onDelete(element.id);
+                newsDeleted();
+              }}
+            >
               <Delete />
             </IconButton>
           </TableCell>
