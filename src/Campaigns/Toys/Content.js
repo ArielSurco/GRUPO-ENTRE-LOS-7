@@ -31,6 +31,7 @@ const Content = () => {
   ];
 
   return (
+    <>
     <Container
       width={false}
       sx={{
@@ -121,6 +122,7 @@ const Content = () => {
         ))}
       </Box>
     </Container>
+    </>
   );
 };
 
