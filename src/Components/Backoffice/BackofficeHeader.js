@@ -84,6 +84,7 @@ const BackofficeHeader = () => {
           </DrawerHeader>
           <Divider />
           <List sx={{ ml: 1 }}>
+            <ListItemButton onClick={()=>push("/")} ><ListItemText primary="Inicio"/></ListItemButton>
             <ListItemButton onClick={()=>push("/backoffice/news")} ><ListItemText primary="Novedades"/></ListItemButton>
             <ListItemButton onClick={()=>push("/backoffice/activities")} ><ListItemText primary="Actividades"/></ListItemButton>
             <ListItemButton onClick={()=>push("/backoffice/categories")} ><ListItemText primary="Categorias"/></ListItemButton>

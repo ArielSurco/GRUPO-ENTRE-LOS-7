@@ -32,17 +32,17 @@ const Header = () => {
         <List sx={{display:{xs:'none', lg:'flex'}, gap:'10px'}}>
           {isLogged
           ?<>
-            <Button component={Link} to="/backoffice" color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>Backoffice</Button>;
-            <Button color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>{userName}</Button>;
-            <Button color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}} onClick={()=>logout()}>Cerrar sesión</Button>;
+            <Button color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>{userName}</Button>
+            <Button component={Link} to="/backoffice" color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>Backoffice</Button>
+            <Button color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}} onClick={()=>logout()}>Cerrar sesión</Button>
           </>
           :<>
             <Button component={Link} to="/login" color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>
               LOGIN
-            </Button>;
+            </Button>
             <Button component={Link} to="/register"  color="buttonregistrate" variant="contained" sx={{alignSelf: 'center'}}>
               Registrate
-            </Button>;
+            </Button>
           </>
           }
         </List>
