@@ -9,7 +9,7 @@ import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 import { Fade, Zoom } from "react-awesome-reveal";
 import TitleBackoffice from "../TitleBackoffice";
-import BackofficeHeader from '../BackofficeHeader';
+import BackofficeHeader from "../BackofficeHeader";
 const BackofficeLayout = () => {
   const BackofficeCategories = [
     {
@@ -83,7 +83,8 @@ const BackofficeLayout = () => {
           <Grid
             sx={{
               justifyContent: "center",
-              width: "100%",
+              width: "80%",
+              margin: "0 auto",
             }}
             container
             spacing={0}
