@@ -83,7 +83,7 @@ export const Footer = () => {
           width: { xs: "100%" },
         }}
       >
-        <Box sx={{ display: { xs: "none", sm: "flex" } }}>
+        <Box sx={{ display: { xs: "none", sm: "flex" }, marginBottom:'15px' }}>
           <Link to="/" style={linkStyle}>
             Visita nuestra página
           </Link>
