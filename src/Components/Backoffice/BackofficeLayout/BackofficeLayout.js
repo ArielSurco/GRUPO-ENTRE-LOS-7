@@ -32,14 +32,14 @@ const BackofficeLayout = () => {
       descripcion:
         "Entra para poder ver todas las categorias de nuestro backoffice",
       button: "Ir a categorias",
-      href: "/backoffice/create-category",
+      href: "/backoffice/categories",
     },
     {
       images: "https://source.unsplash.com/Fsgzm8N0hIY",
       name: "Testimonios",
       descripcion: "Podras ver los testimonios que brindan de nuestra ong",
       button: "Ir a testimonios",
-      href: "/backoffice/news",
+      href: "/backoffice/testimonials",
     },
     {
       images: "https://source.unsplash.com/3V8xo5Gbusk",
@@ -54,7 +54,7 @@ const BackofficeLayout = () => {
       descripcion:
         "Podras entrar para visualizar los slides que presentamos de la organización",
       button: "Ir a Slides",
-      href: "/backoffice/create-slide",
+      href: "/backoffice/slides",
     },
     {
       images: "https://source.unsplash.com/QBpZGqEMsKg",
@@ -62,7 +62,7 @@ const BackofficeLayout = () => {
       descripcion:
         "Entra para visualizar o crear nuestros usuarios de la organizacion",
       button: "Ir a Usuarios",
-      href: "/backoffice/users/create",
+      href: "/backoffice/users",
     },
     {
       images: "https://source.unsplash.com/e6n7uoEnYbA",
