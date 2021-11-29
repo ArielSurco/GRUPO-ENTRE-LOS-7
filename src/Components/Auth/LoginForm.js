@@ -33,7 +33,7 @@ const LoginForm = () => {
     if (e.target.name === "password") {
       setInitialValues({ ...initialValues, password: e.target.value });
       setHasErrors(false);
-    }
+    }}
   const loginRequest = async () => {
     try {
       const {data:{ data }} = await loginUser(initialValues);
@@ -47,7 +47,7 @@ const LoginForm = () => {
     e.preventDefault();
     const { token } = await loginRequest();
     localStorage.setItem("token", token);
-    localStorage.setItem('userName',userName)
+    localStorage.setItem('userName','Juan')
     setLoading(true);
     setTimeout(() => {
       push("/");

@@ -12,6 +12,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLogged,setIsLogged] = useState(false);
   const [userName,setUserName] = useState();
+  const logout = () =>{
+    localStorage.clear();
+    setIsLogged(false)
+  }
   manageLinkActivation(window.location.pathname);
   useEffect(()=>{
     setUserName(localStorage.getItem('userName'))
@@ -30,6 +34,7 @@ const Header = () => {
           ?<>
             <Button component={Link} to="/backoffice" color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>Backoffice</Button>;
             <Button color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>{userName}</Button>;
+            <Button color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}} onClick={()=>logout()}>Cerrar sesión</Button>;
           </>
           :<>
             <Button component={Link} to="/login" color="buttonlogin" variant="outlined" sx={{alignSelf:'center'}}>
