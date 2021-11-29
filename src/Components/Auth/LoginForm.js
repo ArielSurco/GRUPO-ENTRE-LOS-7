@@ -50,6 +50,7 @@ const LoginForm = () => {
         e.preventDefault();
         const {token} = await loginRequest();
         localStorage.setItem('token', token);
+        localStorage.setItem('userName',userName)
         setLoading(true)
         setTimeout(()=>{
             push("/");
