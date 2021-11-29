@@ -15,16 +15,12 @@ const MembersResultsItem = ({ item }) => {
 
   const onEdit = (id) => {
     dispatch(membersActions.getById(id)).then(() => {
-      history.push(`/edit-member/${id}`);
+      history.push(`/backoffice/members/edit/${id}`);
     });
   };
   const onDelete = (id) => dispatch(membersActions.deletebyId(id));
 
   const members = useSelector((state) => state.members.data);
-
-  useEffect(() => {
-    members && dispatch(membersActions.getAll());
-  }, [item]);
 
   return (
     <>

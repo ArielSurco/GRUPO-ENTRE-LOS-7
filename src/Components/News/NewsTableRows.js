@@ -22,7 +22,7 @@ const NewsTableRows = () => {
   const news = useSelector((state) => state.news.data);
 
   useEffect(() => {
-    news && dispatch(newsActions.getAll());
+    dispatch(newsActions.getAll());
   }, []);
 
   return (
