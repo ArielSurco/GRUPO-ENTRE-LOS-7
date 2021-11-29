@@ -141,6 +141,7 @@ const BackofficeLayout = () => {
                       color="white"
                       underline="none"
                       to={categories.href}
+                      style={{width:'100%'}}
                     >
                       <Typography align="center" variant="string" color="white">
                         {categories.button}
