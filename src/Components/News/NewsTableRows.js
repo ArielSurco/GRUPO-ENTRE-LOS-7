@@ -4,6 +4,7 @@ import { Edit, Delete } from "@mui/icons-material";
 import { formatDate } from "../../Utils/formatters";
 import "../../Styles/Table.css";
 import * as newsActions from "../../app/NewsReducer/newsReducer";
+import { cleanCurrentState } from "../../app/NewsReducer/newsReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { getById } from "../../Services/newsServices";
@@ -23,6 +24,7 @@ const NewsTableRows = () => {
 
   useEffect(() => {
     dispatch(newsActions.getAll());
+    dispatch(cleanCurrentState());
   }, []);
 
   return (

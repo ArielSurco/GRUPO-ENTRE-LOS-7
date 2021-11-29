@@ -9,7 +9,6 @@ import MemberEditCreate from "../Members/MemberEditCreate";
 import OrganizationEditionForm from "../Organization/OrganizationEditionForm";
 import SlidesForm from "../Slides/SlidesForm";
 import NewsListEditTable from "../News/NewsListEditTable";
-import BackofficeHeader from "./BackofficeHeader";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import BackofficeLayout from "./BackofficeLayout/BackofficeLayout";
 import {AnimatedSwitch} from 'react-router-transition';
@@ -25,7 +24,6 @@ const BackOfficeRouter = () => {
   const path = "/backoffice"
   return (
     <>
-      <BackofficeHeader />
       <Router>
         <AnimatedSwitch
           atEnter={{opacity:0}}
