@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
-
 import DefaultImage from "../../Assets/Title/default.jpg";
-
 import "../../Styles/BoxStyle.css";
 
 const Title = (props) => {
